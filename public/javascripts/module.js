@@ -17,7 +17,7 @@ var app = angular.module('sample', ['ui.router'])
   })
   .controller('todo', function($scope, $state, $http){
     // console.log('working');
-    $http.get('http://localhost:3000/todos/')
+    $http.get('/todos/')
       .then(function(data){
         $scope.todos = data.data;
       })
@@ -27,7 +27,7 @@ var app = angular.module('sample', ['ui.router'])
 
     $scope.newTask = function(){
       // console.log($scope.task);
-      $http.post('http://localhost:3000/todos', {task: $scope.task})
+      $http.post('/todos', {task: $scope.task})
         .then(function(data){
         console.log(data);
         $state.go($state.current, {}, {reload: true});
@@ -39,7 +39,7 @@ var app = angular.module('sample', ['ui.router'])
 
     $scope.toggleCompleted = function(todo){
       console.log(todo._id);
-      $http.put('http://localhost:3000/todos/' + todo._id)
+      $http.put('/todos/' + todo._id)
       .then(function(data){
         console.log(data.data);
       })
@@ -50,7 +50,7 @@ var app = angular.module('sample', ['ui.router'])
 
     $scope.removeTodo = function(todo){
       console.log(todo);
-      $http.delete('http://localhost:3000/todos/' + todo._id)
+      $http.delete('/todos/' + todo._id)
       .then(function(data){
         $state.go($state.current, {}, {reload: true});
       })
