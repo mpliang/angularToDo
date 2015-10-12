@@ -1,11 +1,8 @@
 <div class="todoapp">
   <div class="appContainer">
     <h1>todo</h1>
-    <!-- <form ui-keypress="{13:'newTask($event)'}"> -->
     <form ng-submit="newTask()">
       <input autofocus class="location" id="location" placeholder="Enter a task" type="text"  ng-model="task">
-      <!-- <span id="instructions">Enter a task</span> -->
-      <!-- <button id="go" ng-click="newTask()">Go!</button> -->
     </form>
   </div>
   <section id="main" ng-show="todos.length" ng-cloak>
