@@ -34,7 +34,7 @@ body {
   font-smoothing: antialiased;
   font-weight: 300;
 }
-.weatherapp {
+.todoapp {
 	background: #fff;
 	margin: 130px 0 40px 0;
 	position: relative;
@@ -44,25 +44,25 @@ body {
 .tasks {
 	text-align: center;
 }
-.weatherapp input::-webkit-input-placeholder {
+.todoapp input::-webkit-input-placeholder {
 	font-style: italic;
 	font-weight: 300;
 	color: #e6e6e6;
 }
 
-.weatherapp input::-moz-placeholder {
+.todoapp input::-moz-placeholder {
 	font-style: italic;
 	font-weight: 300;
 	color: #e6e6e6;
 }
 
-.weatherapp input::input-placeholder {
+.todoapp input::input-placeholder {
 	font-style: italic;
 	font-weight: 300;
 	color: #e6e6e6;
 }
 
-.weatherapp h1 {
+.todoapp h1 {
 	position: absolute;
 	top: -100px;
 	width: 100%;

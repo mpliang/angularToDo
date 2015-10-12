@@ -60,8 +60,6 @@ var app = angular.module('sample', ['ui.router'])
     }
 
 
-
-
   })
   .controller('home', function($scope){
     console.log('test');
